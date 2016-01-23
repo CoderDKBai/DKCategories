@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		554BFDCD1C53E824008F22EF /* UIButton+DKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BFDCC1C53E824008F22EF /* UIButton+DKAdd.m */; };
 		5585F90A1C32C751001DA430 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585F9091C32C751001DA430 /* main.m */; };
 		5585F90D1C32C751001DA430 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585F90C1C32C751001DA430 /* AppDelegate.m */; };
 		5585F9101C32C751001DA430 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585F90F1C32C751001DA430 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		554BFDCB1C53E824008F22EF /* UIButton+DKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DKAdd.h"; sourceTree = "<group>"; };
+		554BFDCC1C53E824008F22EF /* UIButton+DKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DKAdd.m"; sourceTree = "<group>"; };
 		5585F9051C32C751001DA430 /* DKCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5585F9091C32C751001DA430 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5585F90B1C32C751001DA430 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554BFDC91C53E6E1008F22EF /* DKCategories */ = {
+			isa = PBXGroup;
+			children = (
+				554BFDCA1C53E6FF008F22EF /* UIButton */,
+			);
+			path = DKCategories;
+			sourceTree = "<group>";
+		};
+		554BFDCA1C53E6FF008F22EF /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				554BFDCB1C53E824008F22EF /* UIButton+DKAdd.h */,
+				554BFDCC1C53E824008F22EF /* UIButton+DKAdd.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		5585F8FC1C32C751001DA430 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,7 @@
 		5585F9071C32C751001DA430 /* DKCategories */ = {
 			isa = PBXGroup;
 			children = (
+				554BFDC91C53E6E1008F22EF /* DKCategories */,
 				5585F90B1C32C751001DA430 /* AppDelegate.h */,
 				5585F90C1C32C751001DA430 /* AppDelegate.m */,
 				5585F90E1C32C751001DA430 /* ViewController.h */,
@@ -270,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554BFDCD1C53E824008F22EF /* UIButton+DKAdd.m in Sources */,
 				5585F9101C32C751001DA430 /* ViewController.m in Sources */,
 				5585F90D1C32C751001DA430 /* AppDelegate.m in Sources */,
 				5585F90A1C32C751001DA430 /* main.m in Sources */,
@@ -500,6 +522,7 @@
 				5585F9341C32C751001DA430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5585F9351C32C751001DA430 /* Build configuration list for PBXNativeTarget "DKCategoriesTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +531,7 @@
 				5585F9371C32C751001DA430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5585F9381C32C751001DA430 /* Build configuration list for PBXNativeTarget "DKCategoriesUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +540,7 @@
 				5585F93A1C32C751001DA430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
