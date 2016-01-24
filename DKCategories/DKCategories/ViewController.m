@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _btn.expandHitEdgeInsets = UIEdgeInsetsMake(20, 0, 0, 0);
+//    _btn.expandHitEdgeInsets = UIEdgeInsetsMake(20, 0, 0, 0);
 }
 
 - (void)didReceiveMemoryWarning {

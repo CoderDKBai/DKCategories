@@ -20,6 +20,9 @@
     objc_setAssociatedObject(self, @selector(expandHitEdgeInsets), value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    if (UIEdgeInsetsEqualToEdgeInsets(self.expandHitEdgeInsets, UIEdgeInsetsZero) || !self.enabled || self.hidden) {
+        return [super pointInside:point withEvent:event];
+    }
     UIEdgeInsets expandHitEdgeInsets = self.expandHitEdgeInsets;
     CGRect bounds = self.bounds;
     bounds = CGRectMake(CGRectGetMinX(bounds) - expandHitEdgeInsets.left,
