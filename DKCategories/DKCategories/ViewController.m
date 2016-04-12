@@ -17,8 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-//    _btn.expandHitEdgeInsets = UIEdgeInsetsMake(20, 0, 0, 0);
+    
+    UIButton *btn = [[UIButton alloc] init];
+    btn.frame = CGRectMake(100, 100, 45, 80);
+    
+    [btn setImage:[UIImage imageNamed:@"dynamic_publish_cancel"] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [btn setTitle:@"测试按钮" forState:UIControlStateNormal];
+    btn.titleLabel.backgroundColor = [UIColor greenColor];
+    btn.backgroundColor = [UIColor redColor];
+    [btn layoutButtonWithEdgeInsetsStyle:UIButtonEdgeInsetsStyleImageTop imageTitleSpace:5];
+    [self.view addSubview:btn];
 }
 
 - (void)didReceiveMemoryWarning {
