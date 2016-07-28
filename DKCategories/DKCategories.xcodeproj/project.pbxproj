@@ -16,6 +16,7 @@
 		5585F9181C32C751001DA430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5585F9161C32C751001DA430 /* LaunchScreen.storyboard */; };
 		5585F9231C32C751001DA430 /* DKCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585F9221C32C751001DA430 /* DKCategoriesTests.m */; };
 		5585F92E1C32C751001DA430 /* DKCategoriesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585F92D1C32C751001DA430 /* DKCategoriesUITests.m */; };
+		F5DA1D611D49EBA300E1089C /* NSObject+DKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DA1D601D49EBA300E1089C /* NSObject+DKAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		5585F9291C32C751001DA430 /* DKCategoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKCategoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5585F92D1C32C751001DA430 /* DKCategoriesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKCategoriesUITests.m; sourceTree = "<group>"; };
 		5585F92F1C32C751001DA430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DA1D5F1D49EBA300E1089C /* NSObject+DKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DKAdd.h"; sourceTree = "<group>"; };
+		F5DA1D601D49EBA300E1089C /* NSObject+DKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DKAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 			children = (
 				554BFDCB1C53E824008F22EF /* UIButton+DKAdd.h */,
 				554BFDCC1C53E824008F22EF /* UIButton+DKAdd.m */,
+				F5DA1D5F1D49EBA300E1089C /* NSObject+DKAdd.h */,
+				F5DA1D601D49EBA300E1089C /* NSObject+DKAdd.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				5585F9101C32C751001DA430 /* ViewController.m in Sources */,
 				5585F90D1C32C751001DA430 /* AppDelegate.m in Sources */,
 				5585F90A1C32C751001DA430 /* main.m in Sources */,
+				F5DA1D611D49EBA300E1089C /* NSObject+DKAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
