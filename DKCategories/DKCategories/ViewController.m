@@ -21,10 +21,11 @@
     [super viewDidLoad];
     
     UILabel *btn = [[UILabel alloc] init];
+    btn.alpha = 0.01f;
     btn.userInteractionEnabled = YES;
     btn.frame = CGRectMake(100, 100, 100, 100);
     btn.backgroundColor = [UIColor redColor];
-    btn.extraHitTestEdgeInsets = UIEdgeInsetsMake(100, 100, 100, 100);
+    btn.dk_extraHitTestEdgeInsets = UIEdgeInsetsMake(100, 100, 100, 100);
 //    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
@@ -45,4 +46,7 @@
     NSLog(@"点击了按钮");
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+NSLog(@"----fdsafdsf-");
+}
 @end
