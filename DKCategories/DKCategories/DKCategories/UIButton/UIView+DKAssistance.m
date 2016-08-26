@@ -24,6 +24,11 @@
         Method originalMethod = class_getInstanceMethod(class, originalSelector);
         Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
         
+        /*
+         1. 先进行addMethod是为了防止父类有要swizzle的original方法而子类没有时，如果不addMethod而直接进行exchange，则会导致将父类的方法和自定义方法进行交换，这样可能破坏父类结构导致运行时错误。
+         2. 当addMethod执行成功，表示子类中没有要swizzle的方法。下一步执行的是使用original方法替换自定义方法，这个过程并不是我之前认为的两个方法的实现一致了，而是将original的父类方法实现copy到自定义方法中。这样逻辑就通了。
+         3. 如果addMethod失败，说明子类有original方法。那么直接与自定义方法交换，没问题。
+         */
         BOOL didAddMethod = class_addMethod(class,
                                             originalSelector,
                                             method_getImplementation(swizzledMethod),
