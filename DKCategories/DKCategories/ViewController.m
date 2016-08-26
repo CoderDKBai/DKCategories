@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "UIButton+DKAdd.h"
+#import "UIView+DKAssistance.h"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 
@@ -18,16 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *btn = [[UIButton alloc] init];
-    btn.frame = CGRectMake(100, 100, 45, 80);
-    
-    [btn setImage:[UIImage imageNamed:@"dynamic_publish_cancel"] forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [btn setTitle:@"测试按钮" forState:UIControlStateNormal];
-    btn.titleLabel.backgroundColor = [UIColor greenColor];
+    UILabel *btn = [[UILabel alloc] init];
+    btn.userInteractionEnabled = YES;
+    btn.frame = CGRectMake(100, 100, 100, 100);
     btn.backgroundColor = [UIColor redColor];
-    [btn layoutButtonWithEdgeInsetsStyle:UIButtonEdgeInsetsStyleImageTop imageTitleSpace:5];
+    btn.extraHitTestEdgeInsets = UIEdgeInsetsMake(100, 100, 100, 100);
+//    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(click)];
+    [btn addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,6 +39,10 @@
 }
 - (IBAction)btnClick:(id)sender {
     NSLog(@"-----");
+}
+
+- (void)click {
+    NSLog(@"点击了按钮");
 }
 
 @end
