@@ -60,12 +60,7 @@
 #pragma mark - Method Swizzling
 
 - (BOOL)dk_pointInside:(CGPoint)point withEvent:(nullable UIEvent *)event {
-    
-    if(UIEdgeInsetsEqualToEdgeInsets(self.dk_extraHitTestEdgeInsets, UIEdgeInsetsZero) ||
-       self.hidden ||
-       self.alpha <= 0.01f ||
-       !self.userInteractionEnabled ||
-       ([self isKindOfClass:[UIControl class]] && !((UIControl*)self).enabled)) {
+    if(UIEdgeInsetsEqualToEdgeInsets(self.dk_extraHitTestEdgeInsets, UIEdgeInsetsZero) || self.hidden || ([self isKindOfClass:[UIControl class]] && !((UIControl*)self).enabled)) {
         return [self dk_pointInside:point withEvent:event];
     }
     
