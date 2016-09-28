@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		554435B51D9B8F0400B726B9 /* NSString+DKAssistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 554435B41D9B8F0400B726B9 /* NSString+DKAssistance.m */; };
 		554BFDCD1C53E824008F22EF /* UIButton+DKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BFDCC1C53E824008F22EF /* UIButton+DKAdd.m */; };
 		5585F90A1C32C751001DA430 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585F9091C32C751001DA430 /* main.m */; };
 		5585F90D1C32C751001DA430 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585F90C1C32C751001DA430 /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		554435B31D9B8F0400B726B9 /* NSString+DKAssistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DKAssistance.h"; sourceTree = "<group>"; };
+		554435B41D9B8F0400B726B9 /* NSString+DKAssistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DKAssistance.m"; sourceTree = "<group>"; };
 		554BFDCB1C53E824008F22EF /* UIButton+DKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DKAdd.h"; sourceTree = "<group>"; };
 		554BFDCC1C53E824008F22EF /* UIButton+DKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DKAdd.m"; sourceTree = "<group>"; };
 		5585F9051C32C751001DA430 /* DKCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +107,8 @@
 				F5DA1D601D49EBA300E1089C /* NSObject+DKAdd.m */,
 				F5E7174F1D6FE66500B96575 /* UIView+DKAssistance.h */,
 				F5E717501D6FE66500B96575 /* UIView+DKAssistance.m */,
+				554435B31D9B8F0400B726B9 /* NSString+DKAssistance.h */,
+				554435B41D9B8F0400B726B9 /* NSString+DKAssistance.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				5585F9101C32C751001DA430 /* ViewController.m in Sources */,
 				5585F90D1C32C751001DA430 /* AppDelegate.m in Sources */,
 				F5E717511D6FE66500B96575 /* UIView+DKAssistance.m in Sources */,
+				554435B51D9B8F0400B726B9 /* NSString+DKAssistance.m in Sources */,
 				5585F90A1C32C751001DA430 /* main.m in Sources */,
 				F5DA1D611D49EBA300E1089C /* NSObject+DKAdd.m in Sources */,
 			);
