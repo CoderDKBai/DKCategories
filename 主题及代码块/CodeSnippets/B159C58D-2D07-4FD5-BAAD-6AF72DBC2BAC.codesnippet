@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mapperdelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    init?(map: Map) {
+    }
+    
+    mutating func mapping(map: Map) {
+        &lt;#property#&gt; &lt;- map["&lt;#key#&gt;"]
+        &lt;#property#&gt; &lt;- map["&lt;#key#&gt;"]
+        &lt;#property#&gt; &lt;- map["&lt;#key#&gt;"]
+        &lt;#property#&gt; &lt;- map["&lt;#key#&gt;"]
+        &lt;#property#&gt; &lt;- map["&lt;#key#&gt;"]
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B159C58D-2D07-4FD5-BAAD-6AF72DBC2BAC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>协议实现</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mapper</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
