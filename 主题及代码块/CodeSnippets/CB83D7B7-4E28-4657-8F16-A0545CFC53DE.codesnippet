@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>moyaObjectMapper</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var success = true
+            var message = "&lt;#message#&gt;"
+            
+            switch result {
+            case let .success(response):
+                do {
+                    let &lt;#data#&gt; = try response.mapObject(&lt;#ClassOrStruct#&gt;.self)
+                } catch {
+                    success = false
+                }
+            case let .failure(error):
+                guard let error = error as? CustomStringConvertible else {
+                    break
+                }
+                success = false
+                message = error.description
+            }
+            
+            guard success == true else {
+                DKLog(message)
+                return
+            }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CB83D7B7-4E28-4657-8F16-A0545CFC53DE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ObjectMapper</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Moya</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
